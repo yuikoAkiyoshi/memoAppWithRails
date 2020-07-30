@@ -1,26 +1,7 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# memoAppWithRails
+## memoAppWithRails
 railsで作ったメモアプリ
+
+### 立ち上げ
+docker-compose up -d
+- localhost:3000でローカルサーバー起動
