@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="indexInner">
+    <% @posts.each do |post| %>
+      <div class="card">
+        <img src="<%= "/post_images/#{post.image_name}" %>">
+        <div class="title"><%= link_to(post.title, "/posts/#{post.id}") %></div>
+        <div class="body"><%= post.body %></div>
+        <div class="name"><%= post.name %></div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

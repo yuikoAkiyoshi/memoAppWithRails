@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="posts-show-item">
+      <p class="title">
+        <%= @post.title %>
+      </p>
+      <p class="body">
+        <%= @post.body %>
+      </p>
+      <p class="name">
+        <%= @post.name %>
+      </p>
+      <div class="buttonWrapper">
+        <div class="addButton"><%= link_to("編集", "/posts/#{@post.id}/edit") %></div>
+        <div class="deleteButton"><%= link_to("削除", "/posts/#{@post.id}/destroy", {method:"post"}) %></div>
+      </div>
+    </div>
+  </div>
+</div>
+

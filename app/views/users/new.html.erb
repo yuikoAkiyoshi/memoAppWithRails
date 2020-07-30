@@ -1,0 +1,20 @@
+<div class="loginWrapper">
+  <% @user.errors.full_messages.each do |message| %>
+    <%= message%>
+  <% end %>
+    <%= form_tag("/users/create") do %>
+          <div class="loginTitle">Sign Up</div>
+          <div>
+            <input class="loginInput" name="name" placeholder="name" value="<%= @user.name %>">
+          </div>
+          <div>
+            <input class="loginInput" name="email" placeholder="email" value="<%= @user.email %>">
+          </div>
+          <div>
+            <input class="loginInput" name="password" placeholder="password" value="<%= @user.password %>">
+          </div>
+          <div>
+            <input type="submit" value="Sign Up" class="loginButton">
+          </div>
+    <% end %>
+</div>
